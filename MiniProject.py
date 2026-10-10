@@ -1,0 +1,36 @@
+###3 DAY 22: DATA UNDERSTANDING
+
+import pandas as pd
+import numpy as np
+df = pd.read_csv("Retail_Business_Analysis_Messy_3000.csv")
+# print(df.head())
+# print("\nlast 5 rows:")
+# print(df.tail())
+
+# print("\ndataset shape:")
+# print(df.shape)
+
+# print("\ncolumn names:")
+# print(df.columns)
+# print("\nData information:")
+# print(df.info())
+# print("\nData Types:")
+# print(df.dtypes)
+# print("\nstatistical summary:")
+# print(df.describe())
+# print("\nunique values:")
+# print(df.nunique())
+# print("\nmissing values:")
+# print(df.isnull().sum())
+# print("\nmissing percentage:")
+# print((df.isnull().sum()/len(df))*100)
+# print("\nduplicate records:")
+# print(df.duplicated().sum())
+# print("\ncategory unique values:")
+# print(df["Category"].unique())
+# print("\nregion unique values:")
+# print(df["Region"].unique())
+# print("\ncategory value counts:")
+# print(df["Category"].value_counts())
+# print("\nregion value counts:")
+# print(df["Region"].value_counts())
