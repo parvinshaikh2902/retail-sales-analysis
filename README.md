@@ -11,13 +11,15 @@ Analysis of a retail sales dataset (3,000 orders, Jan 2024 to Dec 2025) using Py
 - `Data_transformation.py`: adds new analysis columns
 - `Sales_EDA.ipynb`: sales, customer and product analysis
 - `Retail_SQL_Analysis.sql`: the same analysis in SQL (21 queries)
+- `KPI_Calculations.ipynb`: management KPIs (revenue, profit, orders, customers, AOV, margin, growth)
+- `Day_29_KPI_Document.docx`: KPI definitions, formulas and business meaning
 - `MiniProject.py`: data understanding
 
 ## How to Run
 
 1. `pip install pandas numpy matplotlib jupyter`
 2. Run `Data_Cleaning.py`, then `Data_transformation.py`
-3. Open `Sales_EDA.ipynb` and click Run All
+3. Open `Sales_EDA.ipynb` or `KPI_Calculations.ipynb` and click Run All
 4. For SQL: load `transformed_retail_sales.csv` into a MySQL 8.0 table named `sales` (database `retail_db`) and run `Retail_SQL_Analysis.sql` in MySQL Workbench
 
 ## Key Findings
@@ -30,10 +32,14 @@ Analysis of a retail sales dataset (3,000 orders, Jan 2024 to Dec 2025) using Py
 - 20 customers, no one above 6.3% of revenue. 13 of 20 spent less in 2025.
 - The SQL queries give the same results as the Python analysis.
 
+## KPIs
+
+Revenue Rs 12.05 crore | Profit Rs 1.29 crore | Orders 2,965 | Customers 20 | Average order value Rs 40,626 | Profit margin 10.7% | Revenue growth -4.6% (2025 vs 2024)
+
 ## Limitations
 
 Practice dataset with 20 customers and no cost data, so the analysis shows where profit fell but not why.
 
 ## Progress
 
-Day 22 Data understanding | Day 25 Sales EDA | Day 26 Customer analysis | Day 27 Product analysis | Day 28 SQL analysis
+Day 22 Data understanding | Day 25 Sales EDA | Day 26 Customer analysis | Day 27 Product analysis | Day 28 SQL analysis | Day 29 KPIs
